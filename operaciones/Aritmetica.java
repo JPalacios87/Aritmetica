@@ -4,9 +4,16 @@ public class Aritmetica {
     int a;
     int b;
 
-    //Metodo
+    //Metodos
     public void sumar(){
         int resultado = a + b;
         System.out.println("Resultado = " + resultado);
+    }
+    public int sumarConRetorno() {
+        /**
+         * int resultado = a+ b;
+         * return resultado;
+         */
+        return a + b;
     }
 }
