@@ -9,5 +9,8 @@ public class PruebaAritmetica {
 
         int resultado = artimetica1.sumarConRetorno();
         System.out.println("Resultado desde la prueba = " + resultado);
+
+        resultado = artimetica1.sumarConArgumentos(5, 8);
+        System.out.println("Resultado desde el método pasándole parámetros = " + resultado);
     }
 }
