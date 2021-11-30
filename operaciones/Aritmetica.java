@@ -14,11 +14,11 @@ public class Aritmetica {
          * int resultado = a + b;
          * return resultado;
          */
-        return a + b;
+        return this.a + this.b;
     }
-    public int sumarConArgumentos(int arg1, int arg2){
-        a = arg1;
-        b = arg2;
-        return sumarConRetorno();
+    public int sumarConArgumentos(int a, int b){
+        this.a = a; //El argumento a se asigna al atributo this.a
+        this.b = b;
+        return this.sumarConRetorno();
     }
 }
