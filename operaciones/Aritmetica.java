@@ -15,7 +15,12 @@ public class Aritmetica {
         System.out.println("Ejecutando constructor");
     }
 
-    public Aritmetica(int a, int b){
+    public Aritmetica(int a, int b) {
+        /**
+         * Con el uso de this. se está indicando que las variables están a nivel de
+         * clase, y no del metodo, por lo que son accesibles desde cualquier método de
+         * la clase.
+         */
         this.a = a;
         this.b = b;
         System.out.println("Ejecutando constructor con arg");
@@ -23,7 +28,7 @@ public class Aritmetica {
 
     // Metodos
     public void sumar() {
-        int resultado = a + b;
+        int resultado = this.a + this.b;
         System.out.println("Resultado = " + resultado);
     }
 
