@@ -3,12 +3,12 @@ package operaciones;
 public class PruebaAritmetica {
     public static void main(String[] args) {
 
-        //Variables locales
+        //Variables locales. Se almacenan en la memoria stack
         var a = 10;
         var b = 2;
         MiMetodo();
 
-        Aritmetica artimetica1 = new Aritmetica();
+        Aritmetica artimetica1 = new Aritmetica(); //Se almacena en la memoria heap.
         System.out.println("aritmetica1 a: " + artimetica1.a);
         System.out.println("aritmetica1 b: " + artimetica1.b);
 
