@@ -3,14 +3,12 @@ package operaciones;
 public class PruebaAritmetica {
     public static void main(String[] args) {
         Aritmetica artimetica1 = new Aritmetica();
-        artimetica1.a = 3;
-        artimetica1.b = 2;
-        artimetica1.sumar();
+        System.out.println("aritmetica1 a: " + artimetica1.a);
+        System.out.println("aritmetica1 b: " + artimetica1.b);
 
-        int resultado = artimetica1.sumarConRetorno();
-        System.out.println("Resultado desde la prueba = " + resultado);
+        Aritmetica aritmetica2 = new Aritmetica(5, 8);
+        System.out.println("aritmetica2 a: " + aritmetica2.a);
+        System.out.println("aritmetica2 b: " + aritmetica2.b);
 
-        resultado = artimetica1.sumarConArgumentos(5, 8);
-        System.out.println("Resultado desde el método pasándole parámetros = " + resultado);
     }
 }
